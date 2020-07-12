@@ -1,15 +1,13 @@
-package com.shaice.bigdata;
+package com.shaice.bigdata.ch5;
 
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
 import com.backtype.hadoop.pail.Pail;
+import com.backtype.hadoop.pail.Pail.TypedRecordOutputStream;
 import com.backtype.hadoop.pail.PailSpec;
 import com.backtype.hadoop.pail.SequenceFileFormat;
-import com.backtype.hadoop.pail.Pail.TypedRecordOutputStream;
-import com.shaice.bigdata.ch5.Login;
-import com.shaice.bigdata.ch5.LoginPailStructure;
 
 public class TestCompression {
     public static void main(String[] args) {
