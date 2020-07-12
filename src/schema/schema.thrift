@@ -8,17 +8,19 @@ union PersonID {
 union PageID {
     1: string url;
 }
+
+
 struct EquivEdge {
     1: required PersonID id1;
     2: required PersonID id2;
 }
-
 
 struct PageViewEdge {
     1: required PersonID person;
     2: required PageID page;
     3: required i64 nonce;
 }
+
 
 union PagePropertyValue {
     1: i32 page_views;
@@ -28,6 +30,7 @@ struct PageProperty {
     1: required PageID id;
     2: required PagePropertyValue property;
 }
+
 
 struct Location {
     1: optional string city;
@@ -50,6 +53,7 @@ struct PersonProperty {
     1: required PersonID id;
     2: required PagePropertyValue perperty;
 }
+
 
 union DataUnit {
     1: PersonProperty person_property;
